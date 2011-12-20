@@ -1,17 +1,3 @@
-Example usage: place web/json.xsl in icecast web direcory.
-
-add jquery-icecast.js to your page and:
-
-$(function(){
-$('.mounts').icecast({server:"radio.example.com"});
-});
-
-options:
-server
-stationlogo
-
-
-
 # jquery-icecast.js
 jquery-icecast.js is a jQuery plugin that offers a simplistic way to show icecast simple stats on your website.
 
