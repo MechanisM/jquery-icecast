@@ -1,0 +1,4 @@
+(function($){$.fn.icecast = function(options){$.ajaxSetup({cache:true,scriptCharset:"utf-8",contentType:"text/json;charset=utf-8"});var defaults = {server:"",stationlogo:"http://i.imgur.com/L4qoo.gif"};
+var options = $.extend(defaults,options);return this.each(function(){var mounts = $(this);
+$.getJSON('http://'+options.server+'/json.xsl?callback=',function(data){$.each(data.mounts,function(i,mount){
+$(mounts).append('<li class="mount"><a href="'+mount.url+'"><img class="logo" src="'+options.stationlogo+'" alt="'+mount.description+'"></a><div class="track meta">'+mount.title+'</div><div class="desctription meta">'+mount.description+mount.server_name+'</div><div class="genre meta">Genre: '+mount.genre+'</div><div class="listeners meta">Listeners: '+mount.listeners+' at '+mount.bitrate+'kbps</div></li>');});});});};})(jQuery);
