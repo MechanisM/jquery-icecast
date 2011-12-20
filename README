@@ -1,0 +1,7 @@
+Example usage:
+
+$(function(){$('.mounts').icecast({server:"radio.example.com"});});
+
+options:
+server
+stationlogo
