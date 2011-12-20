@@ -1,5 +1,5 @@
 # jquery-icecast.js
-jquery-icecast.js is a jQuery plugin that offers a simplistic way to show icecast simple stats on your website.
+jquery-icecast.js is a jQuery plugin that offers a simplistic way to show icecast basic stats on your website.
 
 To start using, you to do three basic things:
 
