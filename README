@@ -1,6 +1,10 @@
-Example usage:
+Example usage: place web/json.xsl in icecast web direcory.
 
-$(function(){$('.mounts').icecast({server:"radio.example.com"});});
+add jquery-icecast.js to your page and:
+
+$(function(){
+$('.mounts').icecast({server:"radio.example.com"});
+});
 
 options:
 server
